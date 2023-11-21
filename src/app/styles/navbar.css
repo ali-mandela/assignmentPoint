@@ -1,0 +1,188 @@
+
+ /* ================Navbar====================== */
+ .container{
+    width: 100%;
+    height: 100%;  }
+  .navbar {
+      display: flex;
+      border-bottom: 1px solid #DDD;
+      height: 100px;
+      padding: 0 120px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #37C2CC;
+  }
+  
+  .navbar-menu {
+      font-size:1.3vw;
+  }
+  .navbar .menu{
+    display: flex;
+    align-items: center;
+    gap: 15vw;
+  
+  }
+  .nav-menu {
+      display: flex;
+      flex-direction: row;
+      gap: 1.9vw; 
+  }
+  .nav-menu .nav-link{
+    color: white;
+  }
+  .nav-link {
+      padding: 40px 0;
+      }
+  .nav-dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  .nav-submenu {
+      display: none;
+      position: absolute;
+      top: 64px;
+      background-color: white;
+      min-width: 200px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      z-index: 1; 
+  }
+  
+  .nav-submenu a {
+      color: grey;
+      padding: 12px;
+      text-decoration: none;
+      display: block; 
+  }
+  .nav-submenu a:hover {
+      /* background-color: #E6F4F1;
+      back */
+      background-color: #F7F7F8;
+      color: #0066ff;
+  }
+  .nav-dropdown:hover .nav-submenu {
+      display: block;
+  }
+  .nav-btns {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+  }
+  .nav-btns button {
+      background-color: #0066ff;
+      color: white;
+      border: 1px solid white;
+      font-size: 1vw;
+      border-radius: 4px;
+      padding: 1vw 1vw;
+  }
+  .nav-btns i {
+      color: white;
+      font-size: 2vw;
+      opacity: .6;
+  }
+  .navbar > i{
+   display: none;
+   color: #37C2CC;
+  }
+  .nav-btns button:hover{
+    background-color: #F7F7F8; 
+    border: 1px solid #0066ff;
+    color: #0066ff;
+  }
+  .nav-btns i:hover{
+    opacity:1;
+  }
+  
+  @media (max-width:700px) {
+    .navbar {
+      height: 80px;
+  }
+  .navbar .navbar-title img{
+    width: 90px;
+    height: 50px;
+  }
+  .navbar .menu{
+    position: relative;
+    display: none;
+    width: 80%;
+    top:115px;
+    left: 50px;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,0.2);
+    flex-direction: column; 
+  }
+  .nav-menu {
+      display: block; 
+      flex-direction: row;
+      gap: 1.9vw; 
+  }
+  .navbar-menu {
+    font-size:1.3vw;
+  
+  }
+  .nav-menu .nav-link{
+    color: #0066FF;
+  }
+  .nav-link {
+      padding: 40px 0;
+  }
+  .nav-dropdown {
+      position: relative;
+      display: inline-block;
+  }
+  .nav-submenu {
+      display: none;
+      position: absolute;
+      top: 64px;
+      background-color: #F7F7F8;
+      min-width: 200px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      z-index: 1; 
+  }
+  
+  .nav-submenu a {
+      color: grey;
+      padding: 12px;
+      text-decoration: none;
+      display: block; 
+  }
+  .nav-submenu a:hover {
+      background-color: #F7F7F8;
+      color: #0066ff;
+  }
+  .nav-dropdown:hover .nav-submenu {
+      display: block;
+  }
+  .nav-btns {
+      display: block;
+      gap: 40px;
+      align-items: center;
+  }
+  .nav-btns button {
+      background-color: #37C2CC;
+      color: white;
+      border: 1px solid white;
+      font-size: 1vw;
+      border-radius: 4px;
+      padding: 1vw 1vw;
+  }
+  .nav-btns  i {
+      color: #37C2CC;
+      font-size: 2vw;
+      opacity: .6; 
+      color: #37C2CC;
+         font-size: 9vw;
+  }
+  .navbar > i{
+   display: block; 
+    font-size: 9vw;
+  }
+  .nav-btns button:hover{
+    background-color: #F7F7F8; 
+    border: 1px solid #37C2CC;
+    color:#37C2CC;
+  }
+  .nav-btns i:hover{
+    opacity:1;
+  }
+  
+}

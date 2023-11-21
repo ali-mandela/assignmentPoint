@@ -1,5 +1,6 @@
 import Stats from './components/Stats'
 import Form from './components/form'
+import Testimonials from './components/testimonials'
 import WhyUs from './components/whyus'
 
 const page = () => {
@@ -8,6 +9,7 @@ const page = () => {
    <Form/>
     <WhyUs/>  
     <Stats/>
+    <Testimonials/>
    </>
   )
 }
