@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+}
+/*  */
+.order-now-button {
+    text-align: center;
+    background-color: #37C2CC;
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    transition: color 1s;
+    transition: border 1s;
+    /* transition: background-color 1s; */
+  }
+
+  .order-now-button:hover{
+    color: #37C2CC;
+    border:black solid 2px ;
+    background-color: transparent;
+  }
+  .b{
+    width: 400px;
+  }

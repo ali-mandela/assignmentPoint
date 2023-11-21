@@ -1,0 +1,232 @@
+.whyus {
+    
+    padding: 60px 120px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+   
+} 
+.whyushead {
+    display: flex; 
+    /* border: #4C4C4C 1px solid; */
+    
+   }
+.headleft{
+flex: 7;
+display: flex; 
+flex-direction: column;
+gap: 40px;
+}
+.headright{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headleft h1 {
+    text-transform: uppercase;
+    color: #4C4C4C;
+}
+.headleft p{
+    line-height: 2;
+}
+.whyusbody{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+.whyusFooter{ 
+    display: flex; 
+    gap: 30px;
+    margin: 0 auto;
+    flex-direction: column; 
+}
+.whyusFooter .footerBtn {
+    border: solid 2px #4c4c4c64;
+    text-align: center;
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    transition: color 1s ;
+    transition: border 1s;
+  }
+  .footerBtn:hover{
+    color: #37C2CC;
+    border-color: #37C2CC; 
+  }
+
+/* why us card  */
+.wscardMain { 
+    width: 30%;    
+    padding: 10px ;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    border:solid 2px #4c4c4c64;
+    transition: border 1s; 
+}
+.wscardMain i {
+    color:#37C2CC;
+    font-size: 40px;
+}
+.wscardMain h3{
+
+}
+.wscardMain p{
+    line-height: 1.5;
+}
+.wscardMain:hover{
+    border:solid 2px #37C2CC;
+}
+
+
+/* ====================Form Component===================== */
+.formouter{ 
+    width: 100%;
+    height: 100%;
+}
+.formmain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: white;
+    padding: 60px 120px; 
+    gap: 40px;
+}
+.formheader{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 30px;
+    
+}
+.servicetype{ 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    text-transform: uppercase;
+    gap: 20px;
+}
+
+.formbody{
+    /* border:  1px solid black; */
+    gap: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.formbodyLeft{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+
+}
+.formbodyRight{
+flex: 6;
+display: flex;
+flex-direction: column;
+}
+.formbody input,.formbody  textarea{
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+.formbody input:focus,.formbody select, .formbody  textarea:focus{
+    outline: none;
+}
+.formbody label{
+    padding: 10px; 
+    /* margin: 10px; */
+    border: 1px solid black;
+}
+.formbody select{
+width: 20px;
+background-color: transparent;
+border: none;  
+}
+.nopages{
+    position: relative;
+}
+.nopages i{
+    font-size: 24px;
+    border: solid 1px #4C4C4C;
+}
+ 
+.formfooter{
+    display: flex;
+    /* justify-content: flex-start; */
+    /* flex-direction: column; */
+}
+.formmain button{
+    text-align: center;
+    background-color: #37C2CC;
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    transition: color 1s ease-in-out;
+    transition: border 1s ease-in-out; 
+    border: none;
+}
+
+.formmain button:hover{
+    color: #37C2CC;
+    border:black solid 2px ;
+    background-color: transparent;
+  }
+.stats{
+    padding: 60px 120px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+}
+.statsbody{
+display: flex;
+/* border:  1px solid black; */
+gap: 30px; 
+justify-content: space-between;
+}
+.statscard{
+    /* border: 1px slateblue solid; */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+/* align-items: center; */
+text-align: center; 
+gap: 50px;
+width: 20%;
+transition: 1s color ease-in-out;
+}
+.stats h1{
+    text-transform: uppercase;
+    color: #4C4C4C;
+}
+
+.statscard  i{
+    font-size: 50px;
+}
+
+.statscard h1{
+    text-transform: uppercase;
+    color: #4C4C4C;
+    font-size: 22px;
+}
+.statscard:hover{
+    color: #37C2CC;
+}
