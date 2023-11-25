@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className='container'>
             <nav className='navbar'>
                 <div className='navbar-title'>
-                <Link href='/' > <Image src='http://via.placeholder.com/640x360'  width={140} height={80}/></Link>
+                <Link href='/' > <Image src='http://via.placeholder.com/640x360' alt='logo' width={140} height={80}/></Link>
                   </div>
                 
                      {/* Desktop menu */}
@@ -34,7 +34,7 @@ const Navbar = () => {
                             </ul>
                         </li>
                         <li>
-                            <Link href="/hiw" className='nav-link'><i/>
+                            <Link href="/about" className='nav-link'><i/>
                                 How it works</Link>
                         </li>
                         <li>

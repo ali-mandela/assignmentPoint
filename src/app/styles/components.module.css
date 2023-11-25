@@ -194,7 +194,7 @@ border: none;
     display: flex;
     flex-direction: column;
     gap: 40px;
-    background-color: white;
+    background-color: #37C2CC;
 }
 .statsbody{
 display: flex;

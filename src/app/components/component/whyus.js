@@ -1,5 +1,5 @@
 import styles from '@/app/styles/components.module.css'
-import WhyUsCard from './component/whyuscard'
+import WhyUsCard from './whyuscard'
 import Image from 'next/image'
 import Link from 'next/link'
 import {Features} from '@/app/data.js'

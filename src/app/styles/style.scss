@@ -1,15 +1,33 @@
  
 
-$animationSpeed: 40s;
+$animationSpeed: 50s;
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
 	100% { transform: translateX(calc(-250px * 7))}
 }
+.testimonails{
+    background-color:#FFFFFF ; 
 
+}
+
+.testimonails .testimonail-head{
+    padding: 60px 120px 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.testimonail-bottom{
+    padding: 20px 120px 0; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
 .slider {
-	height: 250px;
-	margin: auto;
+	// height: 250px; 
+    padding: 0 20px 0;
+	// margin: 0 120px;
 	overflow:hidden; 
 	position: relative;
 	width: auto;
@@ -17,34 +35,58 @@ $animationSpeed: 40s;
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
-		width: calc(350px * 14);
+		width: calc(350px * 14); 
 	}
 	.slide {
 		height: 300px;
-		width: 450px;
+		width: 550px;
         padding: 10px;
-	}
-    .slide-main{
+        border: solid 1px black;
+        margin:  50px 0;
         display: flex;
-        align-items: center;
-    }
-    .slide-main .slide-text{
-        flex: 8;
-        margin: 5px 0;
-    }
-    .slide-main .slide-img{
-        flex: 4;
-        border-radius: 50%;
-        border:  5px solid gray;
-        overflow: hidden; 
+        border-radius: 20px;
+        flex-direction: column;
+        margin-right: 20px;
+        gap: 20px;
+	}
+
+    // testiomals top
+    .slide .slide-top{
+        display: flex; 
+        justify-content: space-between;
+    } 
+    .slide-top-detail{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
     }
 
-    .slide-img img{
-        height: 100px;
-        object-fit: contain;
-        width: 100px;
+    .slide-top-img img{
+        display: flex;
+        border: solid 2px black;
+        border-radius: 50%;
+        object-fit: contain; 
+        width: 90px;
+        height: 90px;
     }
-    .slide .slide-body{
-        margin-top: 10px;
+
+    // Testimoanilbody
+    .slide-body span{
+        border: 1px solid gainsboro;
+        margin-right: 4px;
+        font-size: 1rem;
+
     }
+ 
+    //testimoal footer
+    .slide-bottom{
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-between;
+    }
+ .slide-bottom-detail{
+    display: flex;
+    flex-direction: column;
+ }
+
 }

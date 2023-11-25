@@ -1,16 +1,15 @@
-import Stats from './components/Stats'
-import Form from './components/form'
-import Testimonials from './components/testimonials'
-import WhyUs from './components/whyus'
+import Stats from "./components/component/Stats"
+import WhyUs from "./components/component/whyus"
+import Form from "./components/forms/form"
+import Testimonials from "./components/Experts"
 
 const page = () => {
-  return (
-   <>  
-   <Form/>
-    <WhyUs/>  
-    <Stats/>
-    <Testimonials/>
-   </>
+    return ( <> 
+    {/* <Form />  */}
+    {/* <WhyUs />  */}
+    {/* <Stats/>  */}
+    <Testimonials /> 
+    </>
   )
 }
 
