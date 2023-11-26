@@ -1,18 +1,15 @@
+/* =========================Features====================== */
 .whyus {
-    
-    padding: 60px 120px;
-    height: 100%;
-    width: 100%;
+    padding: 60px 120px; 
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
    
 } 
 .whyushead {
-    display: flex; 
-    /* border: #4C4C4C 1px solid; */
-    
-   }
+    display: flex;  
+       }
 .headleft{
 flex: 7;
 display: flex; 
@@ -27,25 +24,28 @@ gap: 40px;
 }
 .headleft h1 {
     text-transform: uppercase;
-    color: #4C4C4C;
+    color: #132146;
+    font-size: 3rem;
 }
 .headleft p{
     line-height: 2;
+    font-size: 1rem;
 }
 .whyusbody{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .whyusFooter{ 
     display: flex; 
-    gap: 30px;
-    margin: 0 auto;
+    gap: 30px; 
+    align-items: center;
     flex-direction: column; 
 }
 .whyusFooter .footerBtn {
-    border: solid 2px #4c4c4c64;
+    border: solid 2px #132146;
     text-align: center;
     width: 160px;
     height: 60px;
@@ -56,10 +56,13 @@ gap: 40px;
     font-weight: 700;
     transition: color 1s ;
     transition: border 1s;
+    background-color: #132146;
+    color: white;
   }
   .footerBtn:hover{
-    color: #37C2CC;
-    border-color: #37C2CC; 
+    background-color: #F63F48;
+    color: #F2F2F2;
+    border-color: #132146; 
   }
 
 /* why us card  */
@@ -73,20 +76,140 @@ gap: 40px;
     transition: border 1s; 
 }
 .wscardMain i {
-    color:#37C2CC;
+    color:#132146;
     font-size: 40px;
 }
-/* .wscardMain h3{
-
-} */
+.wscardMain h3{
+color: #F63F48;
+font-size: 1.5rem;
+}
 .wscardMain p{
     line-height: 1.5;
+    font-size: 1rem;
+
 }
 .wscardMain:hover{
-    border:solid 2px #37C2CC;
+    border:solid 2px #F63F48;
 }
 
-
+@media (max-width:1100px) and (min-width:700px) 
+{
+    .whyus {
+        padding: 40px 60px; 
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+           }  
+        .whyusbody{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+     .whyusFooter .footerBtn {
+        border: solid 2px #132146;
+        text-align: center;
+        width: 160px;
+        height: 60px;
+       font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        transition: color 1s ;
+        transition: border 1s;
+        background-color: #132146;
+        color: white;
+      }
+             /* why us card  */
+    .wscardMain { 
+        width: 49%;    
+        padding: 10px ;
+        display: flex;
+        flex-direction: column;
+        gap: 10px; 
+        border:solid 2px #4c4c4c64;
+        transition: border 1s; 
+    }
+  
+}
+@media(max-width:700px){
+    .whyus {
+        padding: 30px 10px; 
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+       
+    } 
+    .whyushead {
+        display: flex;  
+        flex-direction: column-reverse;
+           }
+    .headleft{
+    flex: 12;
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px;
+    }
+    .headright{
+        flex: 12;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .headleft h1 {
+        text-transform: uppercase;
+        color: #132146;
+        font-size: 2rem;
+    }
+    .headleft p{
+        line-height: 2;
+        font-size: 1rem;
+    }
+    .whyusbody{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .whyusFooter{ 
+        display: flex; 
+        gap: 30px; 
+        align-items: center;
+        flex-direction: column; 
+    }
+    .whyusFooter .footerBtn {
+        border: solid 2px #132146;
+        text-align: center;
+        width: 160px;
+        height: 60px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        transition: color 1s ;
+        transition: border 1s;
+        background-color: #132146;
+        color: white;
+      }
+      .footerBtn:hover{
+        background-color: #F63F48;
+        color: #F2F2F2;
+        border-color: #132146; 
+      }
+    
+    /* why us card  */
+    .wscardMain { 
+        width: 100%;    
+        padding: 10px ; 
+    }
+   
+}
 /* ====================Form Component===================== */
 .formouter{ 
     width: 100%;
@@ -290,5 +413,146 @@ border: solid 1px rgba(255, 255, 255, 0.146);
     }
   
     
+   
+}
+
+
+/* ==================Testimonisls======================== */
+.testimonial{
+    width: 100vw;
+    padding: 60px 120px;
+} 
+.testimonialHead{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.testimonialHead h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #132146;
+}
+.testimonialHead h3{
+font-size: 1.5rem;
+color: #F63F48;
+}
+.testimonialBody{ 
+    margin: 40px 0;
+    }
+.testimonialBody .swipermain{ 
+    border:  solid #132146 1px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    height: 200px;
+    }
+
+    .swipermain .username{
+        font-weight: 900;
+        font-size: 1.5rem;
+    }
+.swipermain .review{
+    font-size: 1.2rem;
+    margin-top: 20px;
+
+}
+.swipermain .rating{
+    font-size: 1rem;
+    color: #F63F48;
+    font-weight: 700;
+}
+.swipermain .revDate{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.testimonialBottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.testimonialBottom p{
+    font-size: 1rem;
+    color: #F63F48;
+    font-weight: 700;
+}
+
+  @media (max-width:700px) {
+    .testimonial{ 
+        padding: 30px 10px;
+    } 
+    .testimonialHead{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .testimonialHead h1{
+        font-size: 2rem; 
+    }
+    .testimonialHead h3{
+    font-size: 1.5rem;
+    color: #F63F48;
+    }
+    .testimonialBody{ 
+        margin: 40px 0;
+        }
+    .testimonialBody .swipermain{ 
+        border:  solid #132146 1px;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+        height: 200px;
+        }
+    
+        .swipermain .username{
+            font-weight: 900;
+            font-size: 1.5rem;
+        }
+    .swipermain .review{
+        font-size: 1.2rem;
+        margin-top: 20px;
+    
+    }
+    .swipermain .rating{
+        font-size: 1rem;
+        color: #F63F48;
+        font-weight: 700;
+    }
+    .swipermain .revDate{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .testimonialBottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .testimonialBottom p{
+        font-size: 1rem;
+        color: #F63F48;
+        font-weight: 700;
+    }
+  }
+  @media (max-width:1100px) and (min-width:700px) {
+    .testimonial{ 
+        padding:40px 60px ;
+    } 
+    .testimonialHead{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .testimonialHead h1{
+        font-size: 2rem; 
+    }
    
 }

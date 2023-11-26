@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import {Features} from '@/app/data.js'
 
-const WhyUs = () => {
+const Feature = () => {
     return (<> 
     <div className={styles.whyus}>
         <div className={styles.whyushead}>
@@ -44,4 +44,4 @@ const WhyUs = () => {
      </>)
 }
 
-export default WhyUs
+export default Feature
