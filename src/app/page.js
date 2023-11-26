@@ -6,8 +6,8 @@ import Testimonials from "./components/Experts"
 const page = () => {
     return ( <> 
     {/* <Form /> 
-    <WhyUs /> 
-    <Stats/>  */}
+    <WhyUs />  */}
+    <Stats/> 
     <Testimonials /> 
     </>
   )

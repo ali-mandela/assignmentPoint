@@ -1,6 +1,7 @@
 // import '@styles/style.scss'
 import '@/app/styles/style.scss'
 import Image from 'next/image'; 
+import profile from '/public/profile.png'
 import { HireMeButton } from './component/component';
 import OrderButton from './component/component';
  
@@ -132,7 +133,7 @@ const Experts = () => {
                                         <p>{item.subjects.map((i, index) => <span key={index}>{i} </span>)}</p>
                                        </div>
                                     <div className='slide-top-img' >
-                                    <Image src={item.src} width={50} height={50} alt={item.username} />
+                                    <Image src={profile} width={50} height={50} alt={item.username} />
                                     </div>
                               
                                 </div>      
