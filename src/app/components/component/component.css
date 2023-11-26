@@ -1,6 +1,6 @@
 .order-now-button {
     text-align: center;
-    background-color: #37C2CC;
+    background-color:   #F63F48;
     width: 160px;
     height: 60px;
     font-size: 18px;
@@ -14,20 +14,21 @@
   }
 
   .order-now-button:hover{
-    color: #37C2CC;
+    color: #132146;
     border:black solid 2px ;
     background-color: transparent;
   }
 
   .hire-me-button {
     text-align: center;
-    background-color: #37C2CC;
+    background-color:  #F63F48;
     border-radius: 20px;
     width: 100px;
     height: 40px;
     font-size: 18px;
     display: flex;
     font-weight: 700;
+    border:#132146   solid 2px ;
     align-items: center;
     justify-content: center;
     transition: color 1s;
@@ -36,7 +37,6 @@
   }
 
   .hire-me-button:hover{
-    color: #37C2CC;
-    border:black solid 2px ;
+    color: #132146;
     background-color: transparent;
   }

@@ -126,42 +126,30 @@ const Experts = () => {
                             <div className="slide" key={index}>
                                 <div className='slide-top'>
                                     <div className='slide-top-detail'>
-                                        <p>{item.userId}</p>
-                                        <p>{item.username}</p>
-                                        <p>{item.educationalQualification}</p>
+                                        <p className='userId'>user ID: {item.userId}</p>
+                                        <p className='username'>{item.username}</p>
+                                        <p className='qualification'>{item.educationalQualification}</p>
+                                        <p>{item.subjects.map((i, index) => <span key={index}>{i} </span>)}</p>
                                        </div>
                                     <div className='slide-top-img' >
                                     <Image src={item.src} width={50} height={50} alt={item.username} />
                                     </div>
                               
-                                </div>      <hr/>
+                                </div>      
+                                <hr style={{backgroundColor:"#F63F48"}}/>
                                 <div className='slide-body'>
                                 <p className='slide-body-bio'>&quot;{item.bio}&quot;</p>
-                                <p>{item.subjects.map((i, index) => <span key={index}>{i} </span>)}</p>
+                                {/* <p>{item.subjects.map((i, index) => <span key={index}>{i} </span>)}</p> */}
                                 </div>
                                 <div className='slide-bottom'>
                                 <div className='slide-bottom-detail'>
-                                <p>Orders Delivered <i className="ri-check-double-fill"></i> : {item.ordersDelivered}</p>
-                                <p>Client rating <i className="ri-star-fill"></i> : {item.clientRating}</p>
+                                <p className='ordersdeivered'>Orders Delivered <i className="ri-check-double-fill odl"></i> : {item.ordersDelivered}</p>
+                                <p className='clientrating'>Client rating <i className="ri-star-fill odl"></i> : {item.clientRating}</p>
                                 </div>
-                                <div className='hme'>
+                                <div className='hire-me'>
                                 <HireMeButton   title="Hire me" link="/about"/>
                                 </div>
-                                 
-                                </div>
-                                {/* <div className='slide-main'>
-                                    <div className='slide-text'>
-                                        <h2>{item.username}</h2>
-                                        <h5>{item.subjectname}</h5>
-                                        <p>{item.date}</p>
-                                    </div>
-                                    <div className='slide-img'>
-                                         <Image src={item.src} width={50} height={50} alt={item.username} />
-                                    </div>
-                                </div>
-                                <div className='slide-body'>
-                                <p>{item.review}</p>
-                            </div> */}
+                                                                 </div>
                             </div>
                         ))
                     }

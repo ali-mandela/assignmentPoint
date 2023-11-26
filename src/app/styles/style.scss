@@ -1,47 +1,44 @@
- 
-
-$animationSpeed: 50s;
-
+ $animationSpeed: 50s;
 @keyframes scroll {
 	0% { transform: translateX(0); }
 	100% { transform: translateX(calc(-250px * 7))}
 }
 .testimonails{
     background-color:#FFFFFF ; 
-
 }
-
 .testimonails .testimonail-head{
     padding: 60px 120px 0; 
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: #132146;
 }
 .testimonail-bottom{
-    padding: 20px 120px 0; 
+    padding: 0 120px 60px  ; 
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; 
     align-items: center;
+    }
+.testimonails p{
+    font-size: 1rem;
+    color: #132146;
 }
-.slider {
-	// height: 250px; 
-    padding: 0 20px 0;
-	// margin: 0 120px;
+.slider { 
+    padding: 0 20px 0; 
 	overflow:hidden; 
 	position: relative;
 	width: auto;
-	
+        
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
 		width: calc(350px * 14); 
+       
 	}
 	.slide {
-		height: 300px;
-		width: 550px;
+		width: 500px;
         padding: 10px;
-        border: solid 1px black;
+        border:#132146  solid 1px;
         margin:  50px 0;
         display: flex;
         border-radius: 20px;
@@ -54,16 +51,19 @@ $animationSpeed: 50s;
     .slide .slide-top{
         display: flex; 
         justify-content: space-between;
+        gap: 10px;
     } 
     .slide-top-detail{
         display: flex;
-        gap: 10px;
+        gap: 5px;
         flex-direction: column;
     }
-
+    .slide-top-detail .username, .qualification{
+        font-weight: 900;
+    }
     .slide-top-img img{
         display: flex;
-        border: solid 2px black;
+        border: solid 2px #F63F48;
         border-radius: 50%;
         object-fit: contain; 
         width: 90px;
@@ -71,11 +71,16 @@ $animationSpeed: 50s;
     }
 
     // Testimoanilbody
-    .slide-body span{
-        border: 1px solid gainsboro;
-        margin-right: 4px;
-        font-size: 1rem;
+    .slide-body >p{
+        font-weight: 500;
 
+    }
+  .slide span{
+        border: 1px solid #F63F48;
+        margin-right: 4px;
+        padding: 4px;
+        font-size: .8rem;
+        border-radius: 8px;
     }
  
     //testimoal footer
@@ -84,9 +89,71 @@ $animationSpeed: 50s;
         // flex-direction: column;
         justify-content: space-between;
     }
+    .slide-bottom-detail .odl{
+        color: #F63F48;
+        font-weight: 900;
+    }
  .slide-bottom-detail{
     display: flex;
     flex-direction: column;
+    gap: 0px;
  }
 
+}
+ $breakpoint-tablet: 1100px;
+ $breakpoint-phone: 700px;
+@media (min-width: $breakpoint-phone)and (max-width:$breakpoint-tablet) {
+ 
+    .testimonails .testimonail-head{
+        padding: 40px 60px 0; 
+    }
+    .testimonail-bottom{
+        padding:0px 60px  40px ; 
+        align-items: center;
+        }
+   
+}
+@media (max-width:$breakpoint-phone) {
+   
+    .testimonails .testimonail-head{
+        padding: 30px 10px 0; 
+    }
+    .testimonail-bottom{
+        padding: 0 10px 30px  ; 
+        }
+    .testimonails p{
+        font-size: 1rem;
+        color: #132146;
+    }
+    .slider { 
+        padding: 0 10px 0; 
+        overflow:hidden; 
+        position: relative;
+        width: auto;
+                    .slide-track {
+            width: calc(350px* 200); 
+                   }
+        .slide {
+            width: 350px;
+            padding: 5px;
+            border:#132146  solid 1px;
+            margin:  30px 0;
+            display: flex;
+            border-radius: 20px;
+            flex-direction: column;
+            margin-right: 20px;
+            gap: 20px;
+        }
+      .slide span{
+            border: 1px solid #F63F48;
+            margin: 4px; 
+            padding: 4px;
+            font-size: .9rem;
+            border-radius: 8px;
+        }
+     
+   
+     
+    }
+    
 }

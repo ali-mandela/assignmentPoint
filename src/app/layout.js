@@ -23,7 +23,7 @@ export default function RootLayout({children}) {
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
         </head>
             <body className={roboto.className}> 
-            <Navbar/>
+            {/* <Navbar/> */}
           {children}
           <Footer/>
           </body>
