@@ -18,16 +18,20 @@
     padding: 0 120px;
     align-items: center;
     justify-content: space-between;
-    background-color: #dfdfdf;
+    background-color: #132146;    
+    overflow: hidden; 
 }
 .desktop .desktopMenu {
     display: flex; 
     flex-direction: row;
-    gap: 10px;
+    gap: 30px;
 }
-.desktopMenu .navLink {
-    border: #0066ff solid 2px;  
+.desktopMenu .navLink { 
+    overflow: hidden;
+    overflow-y: 0;
     margin: 100px 0;
+    color: #f9f9f9;
+    font-size: 1.34rem;
     /* padding: 10px 0; */
 }
 .desktop .navDropdown {
@@ -40,21 +44,20 @@
     background-color: #f9f9f9;
     min-width: 200px; 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .desktop .navSubmenu a {
     color: #F63F48;
     padding: 12px;
     text-decoration: none;
-    display: block;
 }
 .desktop .navSubmenu a:hover {
     background-color: #F7F7F8;
     color: #F63F48;
 }
-.desktop .navDropdown:hover .navSubmenu {
-    display: block;
+.navLink:hover {
+    color: #F63F48;
 }
 .navBtns {
     display: flex;
@@ -62,7 +65,7 @@
     align-items: center;
 }
 .desktop .navBtns i {
-    color: #132146;
+    color: #F63F48;
     font-size: 2rem;
     opacity: 0.7;
 }

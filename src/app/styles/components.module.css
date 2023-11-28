@@ -1,3 +1,234 @@
+/* ====================Form Component===================== */
+ .formouter{ 
+    width: 100vw;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formmain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: white;
+    padding: 60px 120px; 
+    gap: 30px; 
+   
+}
+.formheader{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 30px;
+    
+}
+.servicetype{ 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    text-transform: uppercase;
+    gap: 20px;
+}
+
+.formbody{
+    gap: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.formbodyLeft{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+
+}
+.formbodyRight{
+flex: 6;
+display: flex;
+flex-direction: column;
+}
+.formbody input,.formbody  textarea{
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Roboto';
+}
+.formbody input:focus,.formbody select, .formbody  textarea:focus{
+    outline: none;
+}
+.formbody label{
+    padding: 10px; 
+    border: 1px solid black;
+}
+.formbody select{
+width: 20px;
+background-color: transparent;
+border: none;  
+}
+.nopages{
+    position: relative;
+}
+.nopages i{
+    font-size: 24px;
+    border: solid 1px #4C4C4C;
+}
+ 
+.formfooter{
+    display: flex;
+}
+.formmain button{
+    text-align: center;
+    background-color: #F63F48;
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    transition: color 1s ease-in-out;
+    transition: border 1s ease-in-out; 
+    border: none;
+}
+
+.formmain button:hover{
+    color: #132146;
+    border:#F63F48 solid 2px ;
+    background-color: transparent;
+  } 
+
+  @media(max-width:700px){
+    .formouter{ 
+    width: 100vw;
+    background-color: #F63F48;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formmain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: white;
+    padding: 30px 10px; 
+    gap: 30px; 
+}
+.formheader{ 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.formheader p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2;
+    font-weight: 500;
+    color: #F63F48;
+}
+.servicetype{ 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    text-transform: uppercase;
+    gap: 10px;
+    color: #132146;
+}
+
+.formbody{
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.formbodyLeft{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.formbodyRight{
+flex:12;
+display: flex;
+gap: 10px;
+flex-direction: column;
+}
+.formbody input,.formbody  textarea{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 1rem;
+    color: #132146;
+}
+.formbody input:focus,.formbody select, .formbody  textarea:focus{
+    outline: none;  
+}
+.formbody label{
+    padding: 10px;  
+    font-size: 1rem;
+    width: 90vw;
+    color: #132146;
+    border: 1px solid #132146;
+}
+.formbody input{
+    padding: 0;
+    font-size: 1rem;
+}
+.formbody select{
+width: 20px;
+background-color: transparent;
+border: none;  
+}
+.nopages{
+    position: relative;
+}
+.nopages i{
+    font-size: 2rem;
+    color: #F63F48;
+    border: solid 1px #132146;
+}
+ 
+.formfooter{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.formfooter input{
+    display: flex; 
+    width: 100px;  
+}
+.formfooter p{ 
+    text-align: left; 
+    font-size: 1rem;
+}
+.formmain button{
+    text-align: center;
+      background-color:   #F63F48;
+      color: #132146;
+      width: 120px;
+      height: 50px;
+      font-size: 1rem;
+      display: flex;
+      font-weight: 500;
+      border-radius: 5px;
+      align-items: center;
+      justify-content: center;
+      transition: color 1s;
+      transition: border 1s; 
+}
+
+.formmain button:hover{
+    color: #F63F48 ;
+    border:#F63F48 solid 2px ;
+    background-color: transparent;
+  }
+
+  }
+
 /* =========================Features====================== */
 .whyus {
     padding: 60px 120px; 
@@ -65,7 +296,7 @@ gap: 40px;
     border-color: #132146; 
   }
 
-/* why us card  */
+/* ==============why us card  ======================*/
 .wscardMain { 
     width: 30%;    
     padding: 10px ;
@@ -210,107 +441,6 @@ font-size: 1.5rem;
     }
    
 }
-/* ====================Form Component===================== */
-.formouter{ 
-    width: 100%;
-    height: 100%;
-}
-.formmain{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; 
-    background-color: white;
-    padding: 60px 120px; 
-    gap: 40px;
-}
-.formheader{ 
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; 
-    gap: 30px;
-    
-}
-.servicetype{ 
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    text-transform: uppercase;
-    gap: 20px;
-}
-
-.formbody{
-    /* border:  1px solid black; */
-    gap: 40px;
-    display: flex;
-    justify-content: space-around;
-}
-.formbodyLeft{
-    flex: 6;
-    display: flex;
-    flex-direction: column;
-
-}
-.formbodyRight{
-flex: 6;
-display: flex;
-flex-direction: column;
-}
-.formbody input,.formbody  textarea{
-    border: none;
-    background-color: transparent;
-    padding: 10px;
-    font-size: 16px;
-    font-family: 'Roboto';
-}
-.formbody input:focus,.formbody select, .formbody  textarea:focus{
-    outline: none;
-}
-.formbody label{
-    padding: 10px; 
-    /* margin: 10px; */
-    border: 1px solid black;
-}
-.formbody select{
-width: 20px;
-background-color: transparent;
-border: none;  
-}
-.nopages{
-    position: relative;
-}
-.nopages i{
-    font-size: 24px;
-    border: solid 1px #4C4C4C;
-}
- 
-.formfooter{
-    display: flex;
-    /* justify-content: flex-start; */
-    /* flex-direction: column; */
-}
-.formmain button{
-    text-align: center;
-    background-color: #37C2CC;
-    width: 160px;
-    height: 60px;
-    font-size: 18px;
-    display: flex;
-    font-weight: 700;
-    align-items: center;
-    justify-content: center;
-    transition: color 1s ease-in-out;
-    transition: border 1s ease-in-out; 
-    border: none;
-}
-
-.formmain button:hover{
-    color: #37C2CC;
-    border:black solid 2px ;
-    background-color: transparent;
-  }
-
 
   /* ==========================Stats CSS ===================*/
 .stats{

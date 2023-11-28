@@ -101,9 +101,9 @@ console.log(res);
         ]);
 
     }
-    return (<> <div className='formouter'>
+    return ( 
+        <div className={styles.formouter}>
         <div className={styles.formmain}>
-
             <div className={styles.formheader}>
                 <p>Its time you sought help from assignmentpoint.com Experts</p>
                 <div className={styles.servicetype}>
@@ -113,7 +113,7 @@ console.log(res);
                             value="writing"
                             checked={serviceType === 'writing'}
                             onChange={(e) => setServiceType(e.target.value)}/>
-                        writing
+                        &ensp;writing
                     </label>
                     <label>
                         <input
@@ -121,7 +121,7 @@ console.log(res);
                             value="Rewriting"
                             checked={serviceType === 'Rewriting'}
                             onChange={(e) => setServiceType(e.target.value)}/>
-                        Rewriting
+                        &ensp;Rewriting
                     </label>
                     <label>
                         <input
@@ -129,7 +129,7 @@ console.log(res);
                             value="Editing"
                             checked={serviceType === 'Editing'}
                             onChange={(e) => setServiceType(e.target.value)}/>
-                        Editing
+                        &ensp;Editing
                     </label>
 
                 </div>
@@ -177,8 +177,9 @@ console.log(res);
                             type="text"
                             value={`${NoofPages.pages} ${NoofPages.pgText} / ${NoofPages.words} ${NoofPages.wordText}`}
                             required></input>
+                             <i className="ri-subtract-fill" onClick={() => changePages("dec")}/>
                         <i className="ri-add-line" onClick={() => changePages("inc")}/>
-                        <i className="ri-subtract-fill" onClick={() => changePages("dec")}/>
+                       
                     </label>
                 </div>
                 <div className={styles.formbodyRight}>
@@ -215,16 +216,15 @@ console.log(res);
                 <input
                     type="checkbox"
                     checked={isChecked}
-                    onChange={(e) => setIsChecked(!isChecked)}/>
-                <p>&ensp; I accept the T&C and other policies of the website and agree to
-                    receive offers and updates.</p>
+                    onChange={(e) => setIsChecked(!isChecked)}/> 
+                <p>  I accept the T&C and other policies of the website and agree to
+                    receive offers and updates.</p> 
             </div>
             <button onClick={SubmitForm}>
                 Free Asistance
             </button>
-
         </div>
-    </div> </>
+</div> 
     )}
 
 export default Form;
