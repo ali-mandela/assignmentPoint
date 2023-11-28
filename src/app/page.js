@@ -7,8 +7,8 @@ import HowItWorks from "./components/component/HowItWorks"
 
 const page = () => {
     return ( <> 
-    {/* <Form /> */}
-    <WhyUs />  
+   <Form />
+    <WhyUs />   
     <HowItWorks/>
     <Testimonial/>
     <Stats/> 
