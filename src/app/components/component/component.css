@@ -40,3 +40,28 @@
     color: #132146;
     background-color: transparent;
   }
+
+  @media (max-width:700px) {
+    .order-now-button {
+      text-align: center;
+      background-color:   #F63F48;
+      color: #132146;
+      width: 80px;
+      height: 30px;
+      font-size: 1rem;
+      display: flex;
+      font-weight: 300;
+      border-radius: 5px;
+      align-items: center;
+      justify-content: center;
+      transition: color 1s;
+      transition: border 1s; 
+      /* transition: background-color 1s; */
+    }
+  
+    .order-now-button:hover{
+      color: #F63F48 ;
+      border:#F63F48 solid 2px ;
+      background-color: transparent;
+    }
+  }

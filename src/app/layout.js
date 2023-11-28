@@ -12,19 +12,17 @@ const roboto = Roboto({
 
 export const metadata = {
     title: 'Assignment Point-Home Page',
-    description: 'Your assignment buddy.'
+    description: 'Your buddy for all sorts of assignment.'
 }
 
 export default function RootLayout({children}) {
     return (
         <html lang="en">
             <head>
-                <link
-                    href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-                    rel="stylesheet"/>
+                <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"/>
             </head>
             <body className={roboto.className}>
-                {/* <Navbar/> */}
+                <Navbar/>
                 {children}
                 <Footer/> 
             </body>
